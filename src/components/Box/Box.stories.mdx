@@ -1,0 +1,26 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Box from './Box';
+
+<Meta title='Design System/Components/Box' component={Box} />
+
+# box component
+
+#### Basic box component
+
+<Canvas>
+	<Story name='Box'>
+		<Box mxWidth='350'>This is the box</Box>
+	</Story>
+</Canvas>
+
+# box component
+
+#### box component with custom Height `customHeight` and custom background color `bgColor` prop
+
+<Canvas>
+	<Story name='Custom Box'>
+		<Box mxWidth='350' customHeight='150' bgColor='blue'>
+			This is the box
+		</Box>
+	</Story>
+</Canvas>

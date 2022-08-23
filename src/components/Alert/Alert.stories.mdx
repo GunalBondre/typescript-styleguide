@@ -1,0 +1,38 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Alert from './Alert';
+
+<Meta title='Design System/Components/Alert' component={Alert} />
+
+# Alert component
+
+#### Basic Alert component
+
+<Canvas>
+	<Story name='Success'>
+		<Alert variant='success' message='Success alert' />
+	</Story>
+</Canvas>
+
+#### Basic Alert warning component
+
+<Canvas>
+	<Story name='Warning'>
+		<Alert variant='warning' message='warning alert' />
+	</Story>
+</Canvas>
+
+#### Basic Alert error component
+
+<Canvas>
+	<Story name='Error'>
+		<Alert variant='error' message='error alert' />
+	</Story>
+</Canvas>
+
+#### Basic Alert general component
+
+<Canvas>
+	<Story name='General'>
+		<Alert variant='general' message='gemeral alert' />
+	</Story>
+</Canvas>
