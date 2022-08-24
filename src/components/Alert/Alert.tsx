@@ -13,6 +13,7 @@ const Alert: FC<AlertProps> = (props): JSX.Element => {
 		customWidth,
 		action_button,
 		textColor,
+		action_button_text,
 		...restProps
 	} = props;
 	return (
@@ -25,10 +26,16 @@ const Alert: FC<AlertProps> = (props): JSX.Element => {
 			custom_radius={custom_radius}
 			action_button={action_button}
 			textColor={textColor}
+			action_button_text={action_button_text}
 			data-testid='alert'
 			{...restProps}
 		>
 			<MessageIconWrapper>{message}</MessageIconWrapper>
+			{action_button && action_button_text && (
+				<ButtonWrapper>
+					<button>{action_button_text}</button>
+				</ButtonWrapper>
+			)}
 		</AlertWrapper>
 	);
 };

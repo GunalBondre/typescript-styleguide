@@ -11,7 +11,17 @@ export const AlertWrapper = styled.div<AlertProps>`
 	color: ${(props) => theme.Alert[props.variant].textColor};
 	border-radius: ${(props) =>
 		props.custom_radius ? props.custom_radius : 5}px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 `;
 
 export const MessageIconWrapper = styled.div``;
-export const ButtonWrapper = styled.div<AlertProps>``;
+export const ButtonWrapper = styled.div`
+	button {
+		background-color: transparent;
+		padding: 5px 10px;
+		outline: none;
+		border-radius: 5px;
+	}
+`;

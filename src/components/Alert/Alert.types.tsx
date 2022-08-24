@@ -3,7 +3,8 @@ export interface AlertProps {
 	message: string;
 	title?: string;
 	custom_radius?: string;
-	action_button?: string;
+	action_button?: boolean;
+	action_button_text?: string;
 	bgColor?: string;
 	textColor?: string;
 	customWidth?: string;
