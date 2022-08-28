@@ -13,6 +13,7 @@
     "babel-plugin-jsx-control-statements": "^4.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
     "styled-theming": "^2.2.0",
     "tsx-control-statements": "^4.1.1",

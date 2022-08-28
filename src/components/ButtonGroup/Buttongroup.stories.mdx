@@ -1,0 +1,58 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import ButtonGroup from './ButtonGroup';
+import Button from '../button/Button';
+
+<Meta title='Design System/Components/ButtonGroup' component={ButtonGroup} />
+
+# ButtonGroup
+
+#### Default ButtonGroup
+
+<Canvas>
+	<Story name='Buttongroup'>
+		<ButtonGroup>
+			<Button>Left</Button>
+			<Button>Middle</Button>
+			<Button>Right</Button>
+		</ButtonGroup>
+	</Story>
+</Canvas>
+
+#### ButtonGroup with custom background prop `bgColor` and custo textcolor prop `textColor`
+
+<Canvas>
+	<Story name='Buttongroup custom color'>
+		<ButtonGroup bgColor='lightBlue' textColor='black'>
+			<Button>Left</Button>
+			<Button>Middle</Button>
+			<Button>Right</Button>
+		</ButtonGroup>
+	</Story>
+</Canvas>
+
+#### ButtonGroup with custom width `customWidth` prop
+
+<Canvas>
+	<Story name='Buttongroup custom width'>
+		<ButtonGroup customWidth={350}>
+			<Button>Left</Button>
+			<Button>Middle</Button>
+			<Button>Right</Button>
+		</ButtonGroup>
+	</Story>
+</Canvas>
+
+#### ButtonGroup with numbers
+
+<Canvas>
+	<Story name='Buttongroup nav'>
+		<ButtonGroup customWidth={350}>
+			<Button>1</Button>
+			<Button>2</Button>
+			<Button>3</Button>
+			<Button>4</Button>
+			<Button>5</Button>
+			<Button>6</Button>
+		</ButtonGroup>
+	</Story>
+</Canvas>

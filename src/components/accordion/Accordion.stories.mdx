@@ -1,0 +1,162 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Accordion from './Accordion';
+
+<Meta title='Design System/Components/Accordion' component={Accordion} />
+
+# Accordion
+
+#### Default one Accordion
+
+<Canvas>
+	<Story name='accordion'>
+		<Accordion>
+			<Accordion.Item key={1}>
+				<Accordion.Heading>Accordion 1</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+		</Accordion>
+	</Story>
+</Canvas>
+
+#### Accordion with one panel open at a time
+
+<Canvas>
+	<Story name='single at a time accordion'>
+		<Accordion>
+			<Accordion.Item>
+				<Accordion.Heading>Accordion 1</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+			<Accordion.Item>
+				<Accordion.Heading>Accordion 2</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+			<Accordion.Item>
+				<Accordion.Heading>Accordion 2</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+		</Accordion>
+	</Story>
+</Canvas>
+
+#### preExpanded accordion
+
+<Canvas>
+	<Story name='preExpanded accordion'>
+		<Accordion multiple>
+			<Accordion.Item key={1} alwaysOpen>
+				<Accordion.Heading>Accordion 1</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+			<Accordion.Item key={2}>
+				<Accordion.Heading>Accordion 2</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+			<Accordion.Item key={3}>
+				<Accordion.Heading>Accordion 2</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+		</Accordion>
+	</Story>
+</Canvas>
+
+#### multipanel open accordion
+
+<Canvas>
+	<Story name='multiOpen accordion'>
+		<Accordion multiple>
+			<Accordion.Item key={1}>
+				<Accordion.Heading>Accordion 1</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+			<Accordion.Item key={2}>
+				<Accordion.Heading>Accordion 2</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+			<Accordion.Item key={3}>
+				<Accordion.Heading>Accordion 2</Accordion.Heading>
+				<Accordion.Description>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+					minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Duis aute irure dolor in
+					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+					pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+					culpa qui officia deserunt mollit anim id est laborum.
+				</Accordion.Description>
+			</Accordion.Item>
+		</Accordion>
+	</Story>
+</Canvas>

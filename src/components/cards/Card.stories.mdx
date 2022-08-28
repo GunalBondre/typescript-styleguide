@@ -1,0 +1,74 @@
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Card from './Card';
+import Button from '../button/Button';
+
+<Meta title='Design System/Components/Card' component={Card} />
+
+# Card
+
+#### Basic Example
+
+<Canvas>
+	<Story name='Default Card'>
+		<Card>
+			<Card.Image>
+				<img src='https://placehold.jp/300x200.png' />
+			</Card.Image>
+			<Card.Body>
+				<Card.Title>first card</Card.Title>
+				<Card.Text>
+					Some quick example text to build on the card title and make up the
+					bulk of the card's content.
+				</Card.Text>
+				<Button>Click Here</Button>
+			</Card.Body>
+		</Card>
+	</Story>
+</Canvas>
+
+#### only title inside card body
+
+<Canvas>
+	<Story name='Card example 2'>
+		<Card>
+			<Card.Body>
+				<Card.Title>hello</Card.Title>
+			</Card.Body>
+		</Card>
+	</Story>
+</Canvas>
+
+#### only title inside card body
+
+<Canvas>
+	<Story name='Card example 3'>
+		<Card>
+			<Card.Body>
+				<Card.Title>first card</Card.Title>
+				<Card.Text>
+					Some quick example text to build on the card title and make up the
+					bulk of the card's content.
+				</Card.Text>
+				<Card.Link href='https://www.w3schools.com'>Link 1</Card.Link>
+			</Card.Body>
+		</Card>
+	</Story>
+</Canvas>
+
+#### with card header
+
+<Canvas>
+	<Story name='Card example 4'>
+		<Card>
+			<Card.Header>Restaurant menu</Card.Header>
+			<Card.Body>
+				<Card.Title>first card</Card.Title>
+				<Card.Text>
+					Some quick example text to build on the card title and make up the
+					bulk of the card's content.
+				</Card.Text>
+				<Card.Link href='https://www.w3schools.com'>Link 1</Card.Link>
+			</Card.Body>
+		</Card>
+	</Story>
+</Canvas>
