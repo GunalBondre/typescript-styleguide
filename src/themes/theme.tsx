@@ -28,4 +28,14 @@ export const theme = {
 			textColor: Palette.white,
 		},
 	},
+
+	Input: {
+		background: 'transparent',
+		borderColor: Palette.gray100,
+		color: Palette.black,
+	},
+	Label: {
+		color: Palette.gray100,
+		activeLabel: Palette.gray,
+	},
 };
