@@ -38,7 +38,6 @@ const TextInput: FC<TextInputProps> = ({
 	);
 
 	useEffect(() => {
-		console.log(value);
 		if (value !== '') {
 			setIsActive(true);
 		} else {
