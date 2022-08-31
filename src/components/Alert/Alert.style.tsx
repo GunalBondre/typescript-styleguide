@@ -16,7 +16,11 @@ export const AlertWrapper = styled.div<AlertProps>`
 	align-items: center;
 `;
 
-export const MessageIconWrapper = styled.div``;
+export const MessageIconWrapper = styled.div`
+	svg {
+		padding-right: 20px;
+	}
+`;
 export const ButtonWrapper = styled.div`
 	button {
 		background-color: transparent;

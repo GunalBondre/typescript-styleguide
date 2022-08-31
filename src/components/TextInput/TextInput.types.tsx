@@ -18,10 +18,16 @@ export interface TextInputProps {
 	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 	isActive?: boolean;
 	name?: string;
+	props?: JSX.Element;
 }
 
 export interface LabelProps {
 	label?: string;
 	isActive?: boolean;
 	variant: string;
+	labelPosition?: string;
+}
+
+export interface InputLabelProps {
+	labelPosition?: string;
 }

@@ -9,7 +9,7 @@ import Alert from './Alert';
 
 <Canvas>
 	<Story name='Success'>
-		<Alert variant='success' message='Success alert' />
+		<Alert variant='success' message='Success alert' iconName='success' />
 	</Story>
 </Canvas>
 
@@ -17,7 +17,7 @@ import Alert from './Alert';
 
 <Canvas>
 	<Story name='Warning'>
-		<Alert variant='warning' message='warning alert' />
+		<Alert variant='warning' message='warning alert' iconName='warning' />
 	</Story>
 </Canvas>
 
@@ -25,7 +25,7 @@ import Alert from './Alert';
 
 <Canvas>
 	<Story name='Error'>
-		<Alert variant='error' message='error alert' />
+		<Alert variant='error' message='error alert' iconName='error' />
 	</Story>
 </Canvas>
 
@@ -33,9 +33,16 @@ import Alert from './Alert';
 
 <Canvas>
 	<Story name='General'>
-		<Alert variant='general' message='general alert' />
+		<Alert
+			variant='general'
+			message='general alert'
+			iconName='general'
+			color='white'
+		/>
 	</Story>
 </Canvas>
+
+#### Basic Alert success component with action button
 
 <Canvas>
 	<Story name='Alert with button'>
@@ -44,6 +51,7 @@ import Alert from './Alert';
 			message='success alert'
 			action_button
 			action_button_text='Click Me'
+			iconName='success'
 		/>
 	</Story>
 </Canvas>

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { TextInputProps, LabelProps } from './TextInput.types';
+import { TextInputProps, LabelProps, InputLabelProps } from './TextInput.types';
 import { Palette } from '../../themes/palette';
 import { bodyTextSize } from '../../themes/common';
 import { theme } from '../../themes/theme';
@@ -23,6 +23,7 @@ export const InputWrapper = styled.input<TextInputProps>`
 	max-width: ${(props) => (props.maxWidth ? props.maxWidth : 450)}px;
 	color: ${(props) => (props.textColor ? props.textColor : theme.Input.color)};
 	transition: all 0.5s ease;
+	z-index: 1;
 	&::placeholder {
 		color: ${theme.Label.color};
 	}
@@ -62,18 +63,17 @@ export const LabelWrapper = styled.label<LabelProps>`
 	font-size: 20px;
 	padding: 0 5px;
 	color: ${theme.Label.color};
-	z-index: -1;
 	&.active {
 		top: -10px;
 		transform: translateY(10px);
 		transform: scale(0.85);
 		background-color: ${Palette.white};
 		color: ${theme.Label.activeLabel};
-		z-index: 1;
+		z-index: 2;
 	}
 `;
 
-export const InputLabelWrapper = styled.div`
+export const InputLabelWrapper = styled.div<InputLabelProps>`
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -85,7 +85,7 @@ export const InputLabelWrapper = styled.div`
 			transform: scale(0.85);
 			background-color: ${Palette.white};
 			color: ${theme.Label.activeLabel};
-			z-index: 1;
+			z-index: 2;
 		}
 	}
 `;

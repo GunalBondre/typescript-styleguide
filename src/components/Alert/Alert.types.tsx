@@ -10,6 +10,7 @@ export interface AlertProps {
 	customWidth?: string;
 	children?: any;
 	props?: JSX.Element;
+	iconName?: string;
 }
 
 interface AlertInterface {

@@ -6,7 +6,7 @@ import {
 } from './TextInput.style';
 import { TextInputProps } from './TextInput.types';
 
-import useDebounce from '../hooks/useDebounce';
+import useDebounce from '../../hooks/useDebounce';
 
 const TextInput: FC<TextInputProps> = ({
 	variant,
@@ -46,7 +46,7 @@ const TextInput: FC<TextInputProps> = ({
 	}, [value]);
 
 	return (
-		<InputLabelWrapper>
+		<InputLabelWrapper labelPosition={labelPosition}>
 			<LabelWrapper variant={variant} className={isActive ? 'active' : ''}>
 				{!placeholder && label}
 			</LabelWrapper>

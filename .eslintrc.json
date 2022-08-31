@@ -1,4 +1,5 @@
 {
 	"plugins": ["jsx-control-statements"],
-	"extends": ["plugin:jsx-control-statements/recommended"]
+	"extends": ["plugin:jsx-control-statements/recommended"],
+	"parser": "babel-eslint"
 }
