@@ -1,6 +1,5 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { ButtonWrapper } from './ButtonGroup.style';
-import Button from '../button/Button';
 import { buttonGroupProp } from './Buttongroup.types';
 
 const ButtonGroup: FC<buttonGroupProp> = (props): JSX.Element => {

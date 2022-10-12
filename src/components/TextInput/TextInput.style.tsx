@@ -16,7 +16,11 @@ export const InputWrapper = styled.input<TextInputProps>`
 		props.borderRadius ? props.borderRadius : BORDER_RADIUS}px;
 	outline: none;
 	background-color: ${(props) =>
-		props.bgColor ? props.bgColor : 'transparent'};
+		props.bgColor
+			? props.bgColor
+			: props.disabled
+			? theme.Input.disabled
+			: 'transparent'};
 	font-size: ${(props) => (props.fontSize ? props.fontSize : bodyTextSize)}px;
 	border-color: ${(props) =>
 		props.borderColor ? props.borderColor : theme.Input.borderColor};
@@ -47,6 +51,19 @@ export const InputWrapper = styled.input<TextInputProps>`
 		if (props.variant === 'outlined') {
 			return css`
 				border: 2px solid ${borderColor ? borderColor : theme.Input.borderColor};
+			`;
+		}
+	}}
+	${(props) => {
+		if (props.disabled) {
+			return css`
+				opacity: 0.6;
+				&:hover {
+					border-color: transparent;
+				}
+				&:focus-within {
+					border-color: transparent;
+				}
 			`;
 		}
 	}}

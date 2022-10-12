@@ -33,6 +33,7 @@ export const theme = {
 		background: 'transparent',
 		borderColor: Palette.gray100,
 		color: Palette.black,
+		disabled: Palette.gray100,
 	},
 	Label: {
 		color: Palette.gray100,

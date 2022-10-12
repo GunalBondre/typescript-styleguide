@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert component should render success alert component 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ fXwCea"
+    data-testid="alert"
+  >
+    <div
+      class="sc-gsnTZi"
+    >
+      success alert
+    </div>
+  </div>
+</div>
+`;

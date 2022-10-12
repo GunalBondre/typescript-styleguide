@@ -3,7 +3,7 @@ import { ButtonType } from './Button.constant';
 import { ButtonProps } from './Button.types';
 
 export const ButtonContainer = styled.button<ButtonProps>`
-	width: 100%;
+	width: ${(props) => (props.width ? props.width : '100%')};
 	max-width: ${(props) => (props.width ? props.width : '250px')};
 	min-width: 150px;
 	padding: 10px 20px;

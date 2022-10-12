@@ -15,6 +15,7 @@ const Accordion = ({ children, alwaysOpen, multiple, ...restProps }) => {
 				alwaysOpen={alwaysOpen}
 				children={children}
 				multiple={multiple}
+				data-testid='accordion'
 				{...restProps}
 			>
 				{React.Children.map(children, (child, index) => {

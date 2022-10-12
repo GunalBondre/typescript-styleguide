@@ -28,6 +28,7 @@ const Button: FC<ButtonProps> = ({
 			size={size}
 			fontSize={fontSize}
 			disabled={disabled}
+			data-testid='button-test'
 			{...props}
 		>
 			{children}

@@ -55,3 +55,33 @@ CustomFontSize.args = {
 	fontSize: '22',
 	textColor: 'red',
 };
+
+export const DisabledTextField = Template.bind({});
+
+DisabledTextField.args = {
+	variant: 'outlined',
+	label: 'disabled textfield',
+	fontSize: '22',
+	disabled: true,
+};
+
+export const PasswordField = Template.bind({});
+
+PasswordField.args = {
+	placeholder: 'Enter your password',
+	type: 'password',
+};
+
+export const NumberField = Template.bind({});
+
+NumberField.args = {
+	placeholder: 'Enter phone Number',
+	type: 'Number',
+};
+
+export const EmailField = Template.bind({});
+
+EmailField.args = {
+	placeholder: 'Enter your email',
+	type: 'email',
+};

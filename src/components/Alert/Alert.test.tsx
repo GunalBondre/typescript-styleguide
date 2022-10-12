@@ -3,8 +3,11 @@ import Alert from './Alert';
 
 describe('Alert component', () => {
 	it('should render success alert component', () => {
-		render(<Alert variant='success' message='success alert' />);
+		const { container } = render(
+			<Alert variant='success' message='success alert' />
+		);
 
+		expect(container).toMatchSnapshot();
 		expect(screen.getByTestId('alert')).toBeDefined();
 	});
 	it('should render error alert component', () => {

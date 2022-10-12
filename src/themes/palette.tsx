@@ -9,4 +9,5 @@ export const Palette = {
 	green200: '#a5d6a7',
 	red: '#f44336',
 	orange: '#FF9551',
+	disabledGrey: '#7F8487',
 };

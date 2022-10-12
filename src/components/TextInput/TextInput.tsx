@@ -22,6 +22,8 @@ const TextInput: FC<TextInputProps> = ({
 	bgColor,
 	labelPosition,
 	maxWidth,
+	disabled,
+	type,
 	onChange,
 	name,
 	...rest
@@ -63,8 +65,10 @@ const TextInput: FC<TextInputProps> = ({
 				bgColor={bgColor}
 				labelPosition={labelPosition}
 				maxWidth={maxWidth}
+				disabled={disabled}
 				onChange={debouncedChangeHandler}
 				isActive={isActive}
+				type={type}
 				{...rest}
 			/>
 		</InputLabelWrapper>

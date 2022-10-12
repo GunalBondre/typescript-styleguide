@@ -15,9 +15,11 @@ export interface TextInputProps {
 	bgColor?: string;
 	labelPosition?: string;
 	maxWidth?: string;
+	disabled?: boolean;
 	onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 	isActive?: boolean;
 	name?: string;
+	type?: string;
 }
 
 export interface LabelProps {
